@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+    /*------ COLORS VARIABLES ------*/
+    /*------ COLORS VARIABLES ------*/
+    --white: #fff;
+    --black: #000;
+    --blue: #31326f;
+    --light-blue: #9d0191;
+    --color-sec: #db6400;
+    --color-grey: #e3eef8;
+    --light-grey: #ccc;
+    --dark-grey: #222831;
+    --pink: #e9204f;
+    --text-gray: #3f4954;
+
+    /*------ FONT FAMILY VARIABLES ------*/
+    /*------ FONT FAMILY VARIABLES ------*/
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin: 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic: 'Livvic', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    padding: 8rem 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/*------ HEADER SECTION ------*/
+/*------ HEADER SECTION ------*/
+header {
+    width: 100%;
+    background-color: var(--black);
+    padding: 5px 0;
+}
+
+nav {
+    width: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 1.5rem;
+}
+
+.nav-brand a {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-ul li a {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 0;
+    margin-left: 3rem;
+    color: var(--white);
+}
+
+.nav-link,
+.current {
+    position: relative;
+}
+
+.nav-link::before,
+.current::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -3px;
+    width: 50%;
+    height: 2px;
+    background-color: var(--pink);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.6s;
+}
+
+.current::before {
+    transform: scaleX(1);
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.hamburger,
+.close,
+.search {
+    font-size: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+
+.search {
+    font-size: 1.8rem;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5rem 3rem 0 0;
+    display: none;
+}
