@@ -152,4 +152,80 @@ nav {
     right: 0;
     padding: 1.5rem 3rem 0 0;
     display: none;
+} 
+
+/*------ INTRO SECTION ------*/
+/*------ INTRO SECTION ------*/
+#intro {
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0;
 }
+
+#intro .container {
+    background: url('../images/hero_03.jpg') no-repeat;
+    background-position-x: 70%;
+}
+
+.line {
+    position: relative;
+    padding-top: 3rem;
+} 
+
+.line::before {
+    content: "";
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 5rem;
+    height: 3px;
+    background-color: var(--pink);
+}
+
+.intro-text {
+    width: 80%;
+    padding: 8rem 0;
+}
+
+.intro-text h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+    border: 2px solid var(--pink);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 99%;
+    height: 100%;
+    background-color: var(--pink);
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    transform: translateX(0);
+}
+
+/*------ INTRO CARD ------*/
+/*------ INTRO CARD ------*/

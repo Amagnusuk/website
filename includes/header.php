@@ -31,7 +31,7 @@
                     <li><a href="?page=contact" class="nav-link">Contact</a></li>
                     <li><a href="?page=blog" class="nav-link">Blog</a></li>
                 </ul>
-                <i class="fas fa-search search"></i>
+                <i class="fas fa-search search"></i> 
             </nav>
         </div>
     </header>

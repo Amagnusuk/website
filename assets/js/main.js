@@ -8,3 +8,8 @@ hamburger.addEventListener("click", () => {
     navUL.classList.toggle("show");
     hamburger.classList.toggle("hide");
 });
+
+close.addEventListener("click", () => {
+    navUL.classList.toggle("show");
+    hamburger.classList.toggle("hide"); 
+});
