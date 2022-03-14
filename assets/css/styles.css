@@ -229,3 +229,132 @@ nav {
 
 /*------ INTRO CARD ------*/
 /*------ INTRO CARD ------*/
+.intro-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    row-gap: 2rem;
+    column-gap: 2rem;
+    z-index: 1;
+}
+
+.card {
+    background-color: var(--dark-grey);
+    padding: 6rem 3rem;
+}
+
+.card i {
+    font-size: 4rem;
+    color: var(--pink);
+    padding-bottom: 3rem;
+}
+
+.heading-3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.card h3 {
+    padding-bottom: 4rem;
+}
+
+.card .line::before {
+    top: 7rem;
+}
+
+.card:nth-child(3) {
+    position: relative;
+    background-color: var(--dark-grey);
+}
+
+.card:nth-child(3)::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -1.5rem;
+    width: 105%;
+    height: 7rem;
+    background-color: var(--pink);
+    z-index: -1;
+}
+
+.card:nth-child(3)::after {
+    position: absolute;
+    content: "";
+    right: -5%;
+    bottom: -1.5rem;
+    width: 5%;
+    height: 7rem;
+    background-color: var(--pink);
+}
+
+/*------CARDS HOVER EFFECT------*/
+.card:hover, .card:first-child {
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+.card:hover i, .card:first-child i{
+    color: var(--white);
+}
+
+.card:hover .line::before, .card:first-child .line::before {
+    background-color: var(--white);
+}
+/*--xx--CARDS HOVER EFFECT--xx--*/
+
+/*--xx-- INTRO CARD --xx--*/
+/*--xx-- INTRO CARD --xx--*/
+
+
+/*------SERVICES------*/
+/*------SERVICES------*/
+.heading > * /*PERMITE INCLUIR TODOS ELEMENTOS DESSA CLASSE*/
+{
+    padding-bottom: 2rem;
+}
+
+.heading h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+
+.heading p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--pink);
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    row-gap: 4rem;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service {
+    background-color: #eee;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+}
+
+.service i {
+    color: var(--pink);
+    font-size: 2rem;
+}
+
+.service:hover {
+    background-color: var(--pink);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.service:hover i:first-child {
+    color: var(--white);
+}
+
