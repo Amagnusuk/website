@@ -34,4 +34,16 @@
     .hide {
         display: none;
     }
+    .intro-text {
+        width: 100%;
+    }
+    .intro-text h1 {
+        font-size: 6rem;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .contact > * {
+        margin: 3rem 0;
+    }
 }

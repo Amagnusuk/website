@@ -448,6 +448,14 @@ nav {
 
 /*------BLOG SECTION------*/
 /*------BLOG SECTION------*/
+.blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    row-gap: 4rem;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+
 #blog .heading {
     text-align: center;
 }
@@ -466,6 +474,132 @@ nav {
 
 .blog .blog-text {
     position: absolute;
-    bottom: 1rem;
+    bottom: 4rem;
     color: var(--white);
+    z-index: 11;
+    transform: translateY(2.5rem);
+    transition: all .3s;
+} 
+
+.blog-item:hover .blog-text {
+    transform: translateY(0);
+}
+
+.blog-item img {
+    width: 100;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.1) rotate(360deg);
+}
+
+/*------CONTACT SECTION------*/
+/*------CONTACT SECTION------*/
+#contact {
+    background-color: var(--dark-grey);
+    padding: 10rem 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact i {
+    color: var(--white);
+    font-size: 2.5rem;
+    border: 2px solid var(--pink);
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    border-radius: 50%;
+    margin: 2px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.contact i:hover {
+    transform: translateY(-1rem);
+}
+
+.contact h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+/*------MODAL------*/
+/*------MODAL------*/
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 1111;
+}
+
+.modal-content {
+    width: 80%;
+    max-width: 60rem;
+    margin: 20% auto;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+    animation: slide ease 0.8s;
+}
+
+@keyframes slide {/*Este código configura o "animation"*/
+    0% {
+        transform: translateY(-30rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.close-modal {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    color: var(--white);
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+form input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--white);
+    outline: none;
+    padding: 1rem;
+    color: var(--white);
+    font-size: 1.8rem;
+    position: relative;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+form i {
+    position: absolute;
+    right: 2rem;
+    bottom: 3rem;
 }

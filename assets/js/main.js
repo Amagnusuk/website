@@ -13,3 +13,21 @@ close.addEventListener("click", () => {
     navUL.classList.toggle("show");
     hamburger.classList.toggle("hide"); 
 });
+
+// MODAL SECTION
+// MODAL SECTION
+const modal = document.querySelector(".modal");
+const btn = document.querySelector(".search");
+const closeModal = document.querySelector(".close-modal");
+
+btn.addEventListener("click", openPopup);
+closeModal.addEventListener("click", closePopup);
+
+function openPopup () {
+    modal.style.display = "block";
+}
+
+function closePopup () {
+    modal.style.display = "none";
+}
+

@@ -146,18 +146,18 @@
     <!------BLOG SECTION------>
     <section id="blog">
         <div class="container">
-            <div class="heading">
-                <h2>Latest</h2>
-                <p>WE´RE MORE THAN A DIGITAL AGENCY</p>
+            <div class="heading"> 
+                <h2>Latest News</h2>
+                <p>CHECK OUT SOME OF OUR THINKING</p>
             </div>
 
             <!------BLOG ARTICLES------>
-            <div class="blog about-text">
+            <div class="blog">
                 <div class="blog-item image">
                     <img src="assets/images/01-min.jpg" alt="">
                     <div class="blog-text">
                         <p>DESIGN/UX</p>
-                        <h3>How to drive your customer experience</h3>
+                        <h3 class="heading-3">How to drive your customer experience</h3>
                         <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                     <img src="assets/images/02-min.jpg" alt="">
                     <div class="blog-text">
                         <p>DESIGN/UX</p>
-                        <h3>How to drive your customer experience</h3>
+                        <h3 class="heading-3">How to drive your customer experience</h3>
                         <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
@@ -177,10 +177,29 @@
                     <img src="assets/images/03-min.jpg" alt="">
                     <div class="blog-text">
                         <p>DESIGN/UX</p>
-                        <h3>How to drive your customer experience</h3>
+                        <h3 class="heading-3">How to drive your customer experience</h3>
                         <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!------CONTACT SECTION------>
+    <section id="contact">
+        <div class="container">
+            <div class="contact">
+                <!------ICONS------>
+                <div class="contact-icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+                <!------TEXT------>
+                <h2>Let´s Talk?</h2>
+                <!------BUTTON------>
+                <a href="#" class="btn">Make an enquity!</a>
             </div>
         </div>
     </section>

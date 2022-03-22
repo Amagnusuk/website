@@ -16,7 +16,7 @@
             <nav>
                 <!------ LOGO ------>
                 <div class="nav-brand">
-                    <a href="#" class="text-gray">Blooger</a>
+                    <a href="#" class="text-gray">Design Agency</a>
                 </div>
                 <!--xx-- LOGO --xx-->
                 <div class="hamburger">
